@@ -17,10 +17,15 @@
             $i++;
             $aux += 2;
         }
+        $sumatorio = 0;
         for($i = 0; $i < 20; $i++){
-            $indice[$i] = $i+1;
+            $sumatorio = $impar[$i] + $sumatorio;
+            $suma[$i] = $sumatorio;
+        }
+        for($i = 0; $i < 20; $i++){
+            $indice[$i] = $i;
             
-            print("<tr><td>$indice[$i]</td><td>$impar[$i]</td><td></td> </tr>");
+            print("<tr><td>$indice[$i]</td><td>$impar[$i]</td><td>$suma[$i]</td> </tr>");
         }
 
         ?>
