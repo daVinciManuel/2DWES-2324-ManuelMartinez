@@ -31,13 +31,14 @@
         $ip = substr($ip,0,$netmaskPos); 
         $ipSplitted = explode(".",$ip);
         $ipBinary = array();
-        foreach($ipSplitted as $i => $byte){
+        $ipBinary = $ipSplitted
+        // foreach($ipSplitted as $i => $byte){
             // $byteBin = decbin($byte);
             // print("<p>$i - $byte</p>");
 
-        }
-        extract($ipSplitted);
+        // }
         var_dump($ipSplitted);
+        var_dump($ipBinary);
         // la idea es tener un array con la ip en binario (ipSplitted) y otro con la Ip en binario
     }
     getDireccionRed($ip);
