@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    $ip = '192.168.16.100/16';
+    $ip = '192.168.16.100/21';
 
     $netMask = getNetmask($ip);
     // $DireccionRed = getDireccionRed($ip);
@@ -22,16 +22,13 @@
     
     
     
-    
 // -------------------------------------------------------- FUNCIONES --------------------------------------------------------
     function getNetmask($ip){
         $netmaskPos = strpos($ip,"/");
         $netmask = substr($ip, $netmaskPos+1);
         return $netmask;
     }
-    
-    function getDireccionRed($ip){
-        $debug = true;
+    function ipToBin($ip){
         $netmask = getNetmask($ip);
         $netmaskPos = strpos($ip,"/");
         $ip = substr($ip,0,$netmaskPos); 
@@ -40,38 +37,54 @@
         // convierto cada byte de la IP en binario 
         $ipBinary = array();
         $ipBinary = array_map("decbin",$ipSplitted);
-        // ////////////////////////////////////////////////////////
-        // FALTA RELLENAR CON 0's LOS OCTETOS QUE NO LLEGAN A 8 CHAR
-        // ////////////////////////////////////////////////////////
-        // hago una string con la ip entera
-        $StringIpBin = implode("",$ipBinary);
-        if($debug){
-            var_dump($ipBinary);
-            print("</br>");
-            print("number of bits: ". strlen($StringIpBin));
-            print("</br>");
+        $ipBinary = array_map("completeOcteto",$ipBinary);
+        // var_dump($ipBinary);
+        return($ipBinary);
+    }
+    function completeOcteto($value){
+        if(strlen($value) < 8){
+            $value = str_pad($value,8,"0",STR_PAD_LEFT);
         }
+        return $value;
+    }
+    function getDireccionRed($ip){
+        $debug = true;
+        // hago una string con la ip entera
+        $ipBin = ipToBin($ip); 
+        $StringIpBin = implode("",$ipBin);
+
         // la convierto en un array de bits
+        $arrayBits = array();
         $arrayBits = str_split($StringIpBin);
 
-        // Ahora a intercambiar 0's por 1's para sacar la direccion de red xd
+        if($debug){
+            print("<p> pre conversion a Direccion de Red</p>");
+            // foreach($arrayBits as $v){ print($v); }
+            $StringIpBin = chunk_split(implode("",$arrayBits),8,".");
+            print($StringIpBin);
+            print("</br>");
+            print("</br>");
+        }
+        // Ahora a intercambiar 1's por 0's para sacar la direccion de red xd
+        $netmask = getNetmask($ip);
         foreach($arrayBits as $i => $value){
         if($i >= $netmask){
-            $arrayBits[$i] = 9;
+            $arrayBits[$i] = 0;
         }
         // Time to turn Ip from binary to decimal
         }
-        
-        // $StringIpBin = chunk_split(implode("",$arrayBits),8,".");
-        $StringIpBin = implode("",$arrayBits);
+        $StringIpBin = chunk_split(implode("",$arrayBits),8,".");
+        $StringIpBin = rtrim($StringIpBin,".");
+        $newIP = explode(".",$StringIpBin);
+        $newIP = array_map('bindec',$newIP);
         if($debug){
-        var_dump($ipSplitted);
-        var_dump($arrayBits);
-        print("</br>");
-        print("$StringIpBin");
-        print("</br>");
-        print_r(array_values($arrayBits));
+            print("<p> pos conversion a Direccion de Red</p>");
+            print("$StringIpBin");
+            print("</br>");
+            // foreach($newIP as $v){ print($v); }
+            var_dump($newIP);
         }
+
 
     }
     getDireccionRed($ip);
