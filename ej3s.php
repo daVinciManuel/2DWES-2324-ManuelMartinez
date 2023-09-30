@@ -7,21 +7,21 @@
 </head>
 <body>
     <?php
-    $ip = '192.168.16.100/16';
-
-    $netMask = getNetmask($ip);
-    $DireccionRed = getDireccionRed($ip);
-    $broadcast = getDireccionBroadcast($ip);
-    $rango = getRango($ip);
+    // $ip = '192.168.16.100/11';
+    $listaIP = array("192.168.16.100/16","192.168.16.100/21","10.33.15.100/8");
+    // $netMask = getNetmask($ip);
+    // $DireccionRed = getDireccionRed($ip);
+    // $broadcast = getDireccionBroadcast($ip);
+    // $rango = getRango($ip);
 // -------------------------------------------------------- PRINTS --------------------------------------------------------
-    print("<p>IP $ip</p>");
-    print("<p>Máscara $netMask </p>");
-    print("<p>Direccion Red: $DireccionRed </p>");    
-    print("<p>Direccion Broadcast: $broadcast </p>");    
-    print("<p>Rango: $rango </p>");
-    print("</br></br>");
-    
-    
+    foreach($listaIP as $ip){
+        print("<p>IP $ip</p>");
+        print("<p>Máscara ". getNetmask($ip) ."</p>");
+        print("<p>Direccion Red: " . getDireccionRed($ip) ."</p>");    
+        print("<p>Direccion Broadcast: " . getDireccionBroadcast($ip). "</p>");    
+        print("<p>Rango: " . getRango($ip) ." </p>");
+        print("</br></br>");
+    }
     
 // -------------------------------------------------------- FUNCIONES --------------------------------------------------------
     function getNetmask($ip){
