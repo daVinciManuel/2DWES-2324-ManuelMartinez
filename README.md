@@ -3,7 +3,8 @@
 I'll be uploading here my firsts PHP files.
 If you have any suggestions send me a mail at:
   mgmt.manuel02@gmail.com
-| ## Strings | ---- |
+## Strings
+----
 | -------------- |
 | Code | webpage |
 | ---- | ------- |
@@ -12,6 +13,6 @@ If you have any suggestions send me a mail at:
 | [ej3s.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3s.php) | [myIP/ej1s.php](192.168.206.210/ej3s.php) |
 
 
-//[192.168.206.210/ej2b.php](http://192.168.206.210/ej2b.php)
+
 
 I hope you like it.
