@@ -3,7 +3,7 @@
 I'll be uploading here my firsts PHP files.
 If you have any suggestions send me a mail at:
   mgmt.manuel02@gmail.com
-| ## Strings     |
+| ## Strings | ---- |
 | -------------- |
 | Code | webpage |
 | ---- | ------- |
