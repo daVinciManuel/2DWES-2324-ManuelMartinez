@@ -1,7 +1,7 @@
 # 2DWES-2324-ManuelMartinez
 ---
 I'll be uploading here my firsts PHP files.
-If you have any suggestions send me a mail at:
+If you have any suggestions please contact me:
   mgmt.manuel02@gmail.com
 ## Strings
 | Code | webpage |
