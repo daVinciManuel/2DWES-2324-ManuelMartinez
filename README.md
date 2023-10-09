@@ -27,4 +27,8 @@ If you have any suggestions please contact me:
 | [ej3a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3a.php) | [myIP/ej3a.php](http://192.168.206.210/ej3a.php) |
 | [ej4a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej4a.php) | [myIP/ej4a.php](http://192.168.206.210/ej4a.php) |
 
+## Forms
+| Code | webpage |
+| ---- | ------- |
+| [calculadora.html](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.html) [calculadora.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.php) |
 I hope you like it.
