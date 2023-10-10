@@ -31,4 +31,6 @@ If you have any suggestions please contact me:
 | Code | webpage |
 | ---- | ------- |
 | [calculadora.html](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.html) [calculadora.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.php) | [myIP/calc.html](http://192.168.206.210/calculadora.html) |
+| [fcalculadora.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/fcalculadora.php) | [myIP/fcalc.php](http://192.168.206.210/fcalculadora.php) |
+
 I hope you like it.
