@@ -33,4 +33,9 @@ If you have any suggestions please contact me:
 | [calculadora.html](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.html) [calculadora.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/calculadora.php) | [myIP/calc.html](http://192.168.206.210/calculadora.html) |
 | [fcalculadora.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/fcalculadora.php) | [myIP/fcalc.php](http://192.168.206.210/fcalculadora.php) |
 | [binario.html](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/binario.html) [binario.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/binario.php) | [myIP/calc.html](http://192.168.206.210/binario.html) |
+
+## Bingo!
+| Code | webpage |
+| ---- | ------- |
+| [bingo.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingo.php) [bingoFunc.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingoFunc.php) | [myIP/ej2b.php](http://192.168.206.210/bingo.php) |
 I hope you like it.
