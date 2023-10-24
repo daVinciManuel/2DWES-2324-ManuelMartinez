@@ -37,5 +37,5 @@ If you have any suggestions please contact me:
 ## Bingo!
 | Code | webpage |
 | ---- | ------- |
-| [bingo.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingo.php) [bingoFunc.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingoFunc.php) | [myIP/ej2b.php](http://192.168.206.210/bingo.php) |
+| [bingo.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingo.php) [bingoFunc.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingoFunc.php) | [myIP/ej2b.php](http://192.168.206.210/bingo/index.php) |
 I hope you like it.
