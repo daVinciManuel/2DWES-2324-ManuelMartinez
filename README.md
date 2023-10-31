@@ -25,6 +25,7 @@ If you have any suggestions please contact me:
 | [ej1a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej1a.php) | [myIP/ej1a.php](http://192.168.206.210/ej1a.php) |
 | [ej2a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej2a.php) | [myIP/ej2a.php](http://192.168.206.210/ej2a.php) |
 | [ej3a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3a.php) | [myIP/ej3a.php](http://192.168.206.210/ej3a.php) |
+| [ej4a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej4a.php) | [myIP/ej3a.php](http://192.168.206.210/ej4a.php) |
 
 
 ## Forms
