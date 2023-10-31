@@ -25,7 +25,7 @@ If you have any suggestions please contact me:
 | [ej1a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej1a.php) | [myIP/ej1a.php](http://192.168.206.210/ej1a.php) |
 | [ej2a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej2a.php) | [myIP/ej2a.php](http://192.168.206.210/ej2a.php) |
 | [ej3a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3a.php) | [myIP/ej3a.php](http://192.168.206.210/ej3a.php) |
-c
+
 
 ## Forms
 | Code | webpage |
@@ -44,4 +44,5 @@ c
 | ---- | ------- |
 | [fichero1.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero1.php) | [myIP/ficheros/fichero1.php](http://192.168.206.210/ficheros/fichero1.php) | 
 | [fichero2.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero2.php) | [myIP/ficheros/fichero2.php](http://192.168.206.210/ficheros/fichero2.php) | 
+| [fichero3.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero3.php) | [myIP/ficheros/fichero3.php](http://192.168.206.210/ficheros/fichero3.php) | 
 I hope you like it.
