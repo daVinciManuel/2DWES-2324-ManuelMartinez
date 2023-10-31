@@ -16,7 +16,7 @@ If you have any suggestions please contact me:
 | [ej2b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej2b.php) | [myIP/ej2b.php](http://192.168.206.210/ej2b.php) |
 | [ej3b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3b.php) | [myIP/ej3b.php](http://192.168.206.210/ej3b.php) |
 | [ej4b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej4b.php) | [myIP/ej4b.php](http://192.168.206.210/ej4b.php) |
-| [ej5b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej5b.php) | [myIP/e5b.php](http://192.168.206.210/ej5b.php) |
+| [ej5b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej5b.php) | [myIP/ej5b.php](http://192.168.206.210/ej5b.php) |
 | [ej6b.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej6b.php) | [myIP/ej6b.php](http://192.168.206.210/ej6b.php) |
 
 ## Arrays
@@ -25,7 +25,7 @@ If you have any suggestions please contact me:
 | [ej1a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej1a.php) | [myIP/ej1a.php](http://192.168.206.210/ej1a.php) |
 | [ej2a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej2a.php) | [myIP/ej2a.php](http://192.168.206.210/ej2a.php) |
 | [ej3a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej3a.php) | [myIP/ej3a.php](http://192.168.206.210/ej3a.php) |
-| [ej4a.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ej4a.php) | [myIP/ej4a.php](http://192.168.206.210/ej4a.php) |
+c
 
 ## Forms
 | Code | webpage |
@@ -38,4 +38,10 @@ If you have any suggestions please contact me:
 | Code | webpage |
 | ---- | ------- |
 | [bingo.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingo.php) [bingoFunc.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/bingoFunc.php) | [myIP/ej2b.php](http://192.168.206.210/bingo/index.php) |
+
+## Ficheros
+| Code | webpage |
+| ---- | ------- |
+| [fichero1.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero1.php) | [myIP/ficheros/fichero1.php](http://192.168.206.210/ficheros/fichero1.php) | 
+| [fichero2.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero2.php) | [myIP/ficheros/fichero2.php](http://192.168.206.210/ficheros/fichero2.php) | 
 I hope you like it.
