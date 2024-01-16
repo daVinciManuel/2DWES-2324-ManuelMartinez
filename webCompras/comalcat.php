@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html><head><style>body{ background-color:#dd3434;}</style></head><body><h1>Guardando datos...</h1></body></html>
 <?php
 /* conexionBBDD(); */
   require_once('connect.php');
@@ -6,7 +8,7 @@ $consulta->bindParam(':ID_CATEGORIA','c001');
 $consulta->bindParam(':NOMBRE',$categoria);
 
 if($consulta->execute()){
-  echo '<html><head><style>body{ background-color:#dd3434;}</style></head><body><h1>Guardando datos...</h1></body></html>';
+  /* echo '<html><head><style>body{ background-color:#dd3434;}</style></head><body><h1>Guardando datos...</h1></body></html>'; */
 }
 
 
