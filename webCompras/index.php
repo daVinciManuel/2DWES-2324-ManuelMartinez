@@ -4,7 +4,7 @@
     <title>WebComprasManuelMartinez</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link href="css/style.css" rel="stylesheet"> -->
+    <style>body{ background-color:#dd3434;}</style>
   </head>
   <body>
      <h1>Bienvenido a la web de compras</h1>
@@ -18,7 +18,6 @@
       if(isset($_POST['categoria'])){
         require_once('connect.php');
       }
-
     ?>
   </body>
 </html>
