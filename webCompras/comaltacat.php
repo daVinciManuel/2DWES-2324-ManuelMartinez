@@ -7,12 +7,12 @@
 /*----------------------------*/ 
   /* incremento del id */
   $stmt = $conn->query("SELECT ID_CATEGORIA FROM CATEGORIA ORDER BY ID_CATEGORIA DESC LIMIT 1");
-  $user = $stmt->fetch();
-  $user = $user[0];
-  if(strlen($user)<1){
+  $lastID = $stmt->fetch();
+  $lastID = $lastID[0];
+  if(strlen($lastID)<1){
     $id = 'c001';
   }else{
-    $id_number = strval(substr($user,-3)+1);
+    $id_number = strval(substr($lastID,-3)+1);
     while(strlen($id_number)<3){$id_number = '0'.$id_number;}
     $id = 'c'.$id_number;
   }
