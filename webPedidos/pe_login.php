@@ -64,8 +64,6 @@ function phpAlert($msg) {
   echo '<script type="text/javascript"> if (window.confirm("'. $msg .'")) { window.location.href="pe_login.php"; };</script>';
 
 }
-/* falta configurar mensajes de error  */
-/* NO SE HACE LA SESION */
 ?>
   </body>
 </html>

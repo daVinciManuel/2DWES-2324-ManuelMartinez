@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<?php session_start(); require('connect.php'); ?>
+<?php
+session_start();
+require('connect.php');
+  if($_SESSION["user"] == NULL){
+    header("Location: pe_login.php");
+  }
+?>
 
 <html lang="en">
   <head>
@@ -11,6 +17,7 @@
   </head>
   <body>
   <h1>*menu*</h1>
+  <h2><a href="./pe_altaped.php">web alta pedidos</a></h2>
     <?php
       var_dump($_SESSION);
     ?>
