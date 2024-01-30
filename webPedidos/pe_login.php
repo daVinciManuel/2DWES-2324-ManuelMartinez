@@ -41,8 +41,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
   $passwordExists = $passwordExists['password'];
 
     if($userExists > 0 && $passwordExists > 0){
-      var_dump($userExists);
-      var_dump($passwordExists);
+      /* var_dump($userExists); */
+      /* var_dump($passwordExists); */
       session_start();
       $_SESSION["user"] = $user;
       $_SESSION["password"] = $password;

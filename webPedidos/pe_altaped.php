@@ -1,4 +1,5 @@
 <?php
+/* ME FALTA HACER EL CIERRE DE SESION  */
 session_start();
 require('connect.php');
   if(!isset($_COOKIE['PHPSESSID'])){
@@ -29,7 +30,7 @@ require('connect.php');
 <!-- (bd.table.row) pedidos.products.quantityInStock > 0 -->
   <form action='pe_altaped.php' method='POST'>
 <label for='products'>Seleccione un artículo</label>
-    <select id='products' name='products'>
+    <select id='product' name='product'>
     <option value='null'>Seleccione una opción</option>
     <?php
     $stmt = $conn->query("SELECT productName FROM products WHERE quantityInStock > 0;");
@@ -45,8 +46,14 @@ require('connect.php');
 <br>
       <input type="submit" name="enviar" value="agregar al carrito"/>
   </form>
+<?php 
+    // leer los datos del formulario
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+      $producto = $_POST['produt'];
+      $cantidad = $_POST['number'];
+      var_dump($_POST);
+      echo '<br>';
+    }
+?>
   </body>
 </html>
-<?php 
-// leer los datos del formulario
-?>
