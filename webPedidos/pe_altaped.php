@@ -27,7 +27,8 @@ require('connect.php');
   <h1>*alta pedido*</h1>
 <!-- Desplegable con productos en stock -->
 <!-- (bd.table.row) pedidos.products.quantityInStock > 0 -->
-  <form action='pe_inicio.php' method='POST'>
+  <form action='pe_altaped.php' method='POST'>
+<label for='products'>Seleccione un artículo</label>
     <select id='products' name='products'>
     <option value='null'>Seleccione una opción</option>
     <?php
@@ -39,6 +40,13 @@ require('connect.php');
     }
     ?>
     </select>
+<br></br>
+    <label for='number'>seleccione la cantidad</label>
+    <input type='number' name='number' min=0 max= ></input>
+<input type='submit' name='enviar' value='enviar'</input>
   </form>
   </body>
 </html>
+<?php 
+// leer los datos del formulario
+?>
