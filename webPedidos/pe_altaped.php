@@ -34,16 +34,16 @@ require('connect.php');
     <?php
     $stmt = $conn->query("SELECT productName FROM products WHERE quantityInStock > 0;");
     $stmt-> execute();
-    /* falta hacer el bucle con el tag <option> que muestre todas las categorias*/
     foreach ($stmt as $v) {
       echo "<option value='$v[productName]'>$v[productName]</option>";
     }
     ?>
     </select>
-<br></br>
+<br>
     <label for='number'>seleccione la cantidad</label>
-    <input type='number' name='number' min=0 max= ></input>
-<input type='submit' name='enviar' value='enviar'</input>
+    <input type='number' name='number' min=0 max= <?php $stmt = $conn->query("SELECT max(quantityInStock) as 'maxCant' FROM products;"); $maxCant = $stmt->fetch(); $maxCant = $maxCant[0]; echo $maxCant . ' '; ?> />
+<br>
+      <input type="submit" name="enviar" value="agregar al carrito"/>
   </form>
   </body>
 </html>
