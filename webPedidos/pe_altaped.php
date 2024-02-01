@@ -3,7 +3,7 @@
 session_start();
 require('connect.php');
   if(!isset($_COOKIE['PHPSESSID'])){
-    header("Location: pe_login.php");
+    header("Location:./pe_login.php");
   }
 ?>
 
@@ -20,11 +20,15 @@ require('connect.php');
         display:grid;
         align-items:center;
         justify-content:center;
-        height: 100vh
+        height: 100vh;
       }
     </style>
   </head>
   <body>
+<?php
+include('pe_logout.php');
+logout();
+?>
   <h1>*alta pedido*</h1>
 <!-- Desplegable con productos en stock -->
 <!-- (bd.table.row) pedidos.products.quantityInStock > 0 -->

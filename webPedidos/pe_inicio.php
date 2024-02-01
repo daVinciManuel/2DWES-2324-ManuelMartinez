@@ -2,7 +2,7 @@
 <?php
 session_start();
 require('connect.php');
-  if($_SESSION["user"] == NULL){
+  if(!isset($_COOKIE['PHPSESSID'])){
     header("Location: pe_login.php");
   }
 ?>
