@@ -1,10 +1,11 @@
-<?php require('connect.php'); ?>
 <?php
   if(isset($_COOKIE['PHPSESSID'])){
     session_unset();
     session_destroy();
+  setCookie('PHPSESSID','',-3600);
   }
 ?>
+<?php require('connect.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>

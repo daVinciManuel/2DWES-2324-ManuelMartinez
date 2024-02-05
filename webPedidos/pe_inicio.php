@@ -2,6 +2,7 @@
 <?php
 session_start();
 require('connect.php');
+/* include('fn.php'); */
   if(!isset($_COOKIE['PHPSESSID'])){
     header("Location: pe_login.php");
   }
@@ -20,6 +21,6 @@ require('connect.php');
   <h2><a href="./pe_altaped.php">web alta pedidos</a></h2>
     <?php
       var_dump($_SESSION);
-    ?>
+?>
   </body>
 </html>
