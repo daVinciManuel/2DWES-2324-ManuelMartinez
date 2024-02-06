@@ -2,7 +2,8 @@
 /* ME FALTA HACER EL CIERRE DE SESION  */
 session_start();
 require('connect.php');
-include('./fn.php');
+require('./fn.php');
+  $conn = connect();
   if(!isset($_COOKIE['PHPSESSID'])){
     header("Location:./pe_login.php");
   }
@@ -34,6 +35,7 @@ include('./fn.php');
 
 <?php
 echo '<form action="./pe_logout.php" method="POST" name="logout"><input type="submit" name="logout" value="Logout"></input></form>';
+echo '<form action="./pe_inicio.php" method="POST" name="inicio"><input type="submit" name="inicio" value="Menú Inicio"></input></form>';
 ?>
 <!-- <a href="./pe_logout.php">Cerrar sesion</a> -->
   <h1>*alta pedido*</h1>
@@ -52,8 +54,8 @@ echo '<form action="./pe_logout.php" method="POST" name="logout"><input type="su
     ?>
     </select>
 <br>
-    <label for='number'>seleccione la cantidad</label>
-    <input type='number' name='number' min=0 max= <?php $stmt = $conn->query("SELECT max(quantityInStock) as 'maxCant' FROM products;"); $maxCant = $stmt->fetch(); $maxCant = $maxCant[0]; echo $maxCant . ' '; ?> />
+    <label for='cantidad'>seleccione la cantidad</label>
+    <input type='number' name='cantidad' min=0 max= <?php $stmt = $conn->query("SELECT max(quantityInStock) as 'maxCant' FROM products;"); $maxCant = $stmt->fetch(); $maxCant = $maxCant[0]; echo $maxCant . ' '; ?> />
 <br>
       <input type="submit" name="enviar" value="agregar al carrito"/>
   </form>
@@ -61,21 +63,15 @@ echo '<form action="./pe_logout.php" method="POST" name="logout"><input type="su
     // leer los datos del formulario
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
       $producto = $_POST['product'];
-      $cantidad = $_POST['number'];
+      $cantidad = $_POST['cantidad'];
       echo '<br>';
-      $stmt = $conn->query('SELECT quantityInStock as "maxCant" FROM products WHERE productName="'. $producto .'";');
-      $maxCant = $stmt->fetch();
-      $maxCant = $maxCant[0];
-      $isAvailable = false;
-      if($maxCant < $cantidad){
+      if(isAvailable($producto,$cantidad)){
 ?>
-        <h2>Lo sentimos solo nos quedan: <?php echo $maxCant; ?> unidades del <?php echo $producto; ?> </h2>
-
+        <h2>Agregado al carrito.</h2>
 <?php
       }else{
-        $isAvailable = true;
 ?>
-        <h2>Disfrute de su pedido</h2>
+        <h2>Lo sentimos solo nos quedan: <?php echo quantityOf($producto);?> unidades del <?php echo $producto; ?></h2>
 <?php
       }
     }
