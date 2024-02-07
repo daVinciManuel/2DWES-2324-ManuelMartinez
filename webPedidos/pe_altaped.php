@@ -1,6 +1,5 @@
 <?php
 /* ME FALTA HACER EL CIERRE DE SESION  */
-session_start();
 require('connect.php');
 require('./fn.php');
   $conn = connect();
@@ -66,6 +65,7 @@ echo '<form action="./pe_inicio.php" method="POST" name="inicio"><input type="su
       $cantidad = $_POST['cantidad'];
       echo '<br>';
       if(isAvailable($producto,$cantidad)){
+        addProduct($producto,$cantidad);
 ?>
         <h2>Agregado al carrito.</h2>
 <?php

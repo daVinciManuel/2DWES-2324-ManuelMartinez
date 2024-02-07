@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-session_start();
 require('connect.php');
+$conn = connect();
 /* include('fn.php'); */
   if(!isset($_COOKIE['PHPSESSID'])){
     header("Location: pe_login.php");

@@ -5,7 +5,7 @@
   setCookie('PHPSESSID','',-3600);
   }
 ?>
-<?php require('connect.php'); ?>
+<?php require('connect.php'); $conn = connect();?>
 <!DOCTYPE html>
 <html>
   <head>
