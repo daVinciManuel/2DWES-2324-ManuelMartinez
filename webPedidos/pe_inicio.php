@@ -4,7 +4,7 @@ require('connect.php');
 $conn = connect();
 /* include('fn.php'); */
   if(!isset($_COOKIE['PHPSESSID'])){
-    header("Location: pe_login.php");
+    header("Location: ./pe_login.php");
   }
 ?>
 

@@ -70,7 +70,7 @@ function isAvailable($productName,$quantity) {
 }
 // --------------- FUNCION AGREGAR AL CARRITO ---------------
 function addProduct($productName, $quantity){
-  $debug = true;
+  $debug = false;
   $conn = connect();
   /* $pedido = array(); // array con la forma pedido[productName]=$quantity */
   $cookie_name = "carrito";
@@ -78,7 +78,7 @@ function addProduct($productName, $quantity){
     $pedido[$productName] = $quantity;
     $cookie_value = serialize($pedido);
     setcookie($cookie_name,$cookie_value,time() + 86400 * 5, "/");
-        if(debug){ print_r($pedido); echo 'entro en el if'; }
+        if($debug){ print_r($pedido); echo 'entro en el if'; }
   }else{
     // debo acceder al array pedido dentro de la cookie carrito
     // para agregarle un elemento mas
@@ -86,17 +86,26 @@ function addProduct($productName, $quantity){
     $storedProducts = unserialize($_COOKIE['carrito']);
     $newProducts = array($productName => $quantity - 100);
     $updatedProducts = array_merge($storedProducts,$newProducts);
-        if(debug){ print_r($updatedProducts); echo 'entro en el else'; }
+        if($debug){ print_r($updatedProducts); echo 'entro en el else'; }
     $cookie_value = serialize($updatedProducts);
     setcookie($cookie_name,$cookie_value,time() + 86400 * 5, "/");
   }
 }
-$debug = true;
+$debug = false;
+function toNumber($data){
+  if(gettype($data)!= 'integer'){
+    $data = 0;
+  }
+  return $data;
+}
 if($debug){
   $producto = getProductName(20)[2];
   $cantidad = quantityOf($producto);
   addProduct($producto,$cantidad);
   echo 'hey there';
+  $ff = '123b4';
+  $ff = toNumber((int)$ff);
+  var_dump($ff);
 }
 if ($debugHTML) { echo ' </body> </html> '; }
 ?>
