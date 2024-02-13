@@ -3,6 +3,12 @@
 I'll be uploading here my firsts PHP files.
 If you have any suggestions please contact me:
   mgmt.manuel02@gmail.com
+## Web Pedidos
+| Code | webpage |
+| ---- | ------- |
+| [mvc_login.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/webPedidos/mvc/mvc_login.php) | [myIP/webPedidos/mvc/mvc_login.php](http://192.168.206.210/webPedidos/mvc/mvc_login.php) |
+| [pe_login.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/webPedidos/pe_login.php) | [myIP/webPedidos/pe_login.php/](http://192.168.206.210/webPedidos/pe_login.php) |
+
 ## Strings
 | Code | webpage |
 | ---- | ------- |
