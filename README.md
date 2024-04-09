@@ -7,6 +7,8 @@ If you have any suggestions please contact me:
 ## Recuperacion
 - [Ejercicio 01](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r001.php)
 - [Ejercicio 02](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r002.php)
+- [Ejercicio 03](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r003.php)
+- [Ejercicio 04](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r004.php)
 
 ## Web Pedidos
 | Code | webpage |
