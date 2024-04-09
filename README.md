@@ -3,6 +3,11 @@
 I'll be uploading here my firsts PHP files.
 If you have any suggestions please contact me:
   mgmt.manuel02@gmail.com
+
+## Recuperacion
+- [Ejercicio 01]((https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r001.php)
+- [Ejercicio 02]((https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r002.php)
+
 ## Web Pedidos
 | Code | webpage |
 | ---- | ------- |
