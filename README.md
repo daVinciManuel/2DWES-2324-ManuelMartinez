@@ -10,6 +10,7 @@ If you have any suggestions please contact me:
 - [Ejercicio 03](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r003.php)
 - [Ejercicio 04](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r004.php)
 - [Ejercicio 05](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r005.php)
+- [Ejercicio 06](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r006.php)
 
 ## Web Pedidos
 | Code | webpage |
