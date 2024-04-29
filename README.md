@@ -11,6 +11,8 @@ If you have any suggestions please contact me:
 - [Ejercicio 04](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r004.php)
 - [Ejercicio 05](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r005.php)
 - [Ejercicio 06](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r006.php)
+- [Ejercicio 07](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r007.php)
+- [Ejercicio 08](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/recuperacion/r008.php)
 
 ## Web Pedidos
 | Code | webpage |
@@ -60,5 +62,6 @@ If you have any suggestions please contact me:
 | ---- | ------- |
 | [fichero1.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero1.php) | [myIP/ficheros/fichero1.php](http://192.168.206.210/ficheros/fichero1.php) | 
 | [fichero2.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero2.php) | [myIP/ficheros/fichero2.php](http://192.168.206.210/ficheros/fichero2.php) | 
-| [fichero3.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero3.php) | [myIP/ficheros/fichero3.php](http://192.168.206.210/ficheros/fichero3.php) | 
+| [fichero3.php](https://github.com/daVinciManuel/2DWES-2324-ManuelMartinez/blob/main/ficheros/fichero3.php) | [myIP/ficheros/fichero3.php](http://192.168.206.210/ficheros/fichero3.php) |
+
 I hope you like it.
